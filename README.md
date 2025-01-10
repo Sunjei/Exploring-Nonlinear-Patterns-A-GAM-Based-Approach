@@ -1,7 +1,7 @@
 # Exploring-Nonlinear-Patterns-A-GAM-Based-Approach
 
 
-'''
+
 library(readr)
 data <- read_csv("data.csv")
 View(data)
@@ -101,7 +101,7 @@ ggplot(test_data, aes(x = diagnosis, y = predicted)) +
 ![스크린샷 2025-01-11 05-26-20](https://github.com/user-attachments/assets/e414eecb-1032-43f3-b646-310f719245c2)
 
 
-'''
+
 
 
 
