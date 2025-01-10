@@ -1,12 +1,14 @@
 # Exploring-Nonlinear-Patterns-A-GAM-Based-Approach
 
 
-
+'''
 library(readr)
 data <- read_csv("data.csv")
 View(data)
 install.packages("mgcv")
 library(mgcv)
+'''
+
 
 model_full <- gam(diagnosis ~ s(radius_mean) + s(texture_mean) + 
 +                       s(perimeter_mean) + s(area_mean) + 
