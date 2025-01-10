@@ -52,7 +52,7 @@ summary(model)
 plot(model, pages = 1)
 ```
 
-![스크린샷 2025-01-11 05-25-46](https://github.com/user-attachments/assets/4193c325-f715-4e3d-a3d4-948ab14af8ad)
+![스크린샷 2025-01-11 05-34-03](https://github.com/user-attachments/assets/e0160d10-9ee3-4d2e-ad88-46e4da24fda7)
 
 
 
@@ -65,7 +65,7 @@ roc_curve <- roc(test_data$diagnosis, predictions)
 plot(roc_curve, main = "ROC Curve")
 ```
 
-![스크린샷 2025-01-11 05-25-52](https://github.com/user-attachments/assets/fa2cb783-0cc9-4d14-a59d-911e4dc7d9a6)
+![스크린샷 2025-01-11 05-34-07](https://github.com/user-attachments/assets/b16bde97-00fc-4854-bd62-777023020557)
 
 
 ```
@@ -74,7 +74,8 @@ library(mgcv)
 
 vis.gam(model, view = c("radius_mean", "texture_mean"), type = "response", plot.type = "persp")
 ```
-![스크린샷 2025-01-11 05-26-04](https://github.com/user-attachments/assets/5f2470e9-5360-497f-b831-ba4b9dca544c)
+
+![스크린샷 2025-01-11 05-34-11](https://github.com/user-attachments/assets/4ca396d9-42f5-4eb3-a726-d25eb7cc124c)
 
 
 ```
@@ -93,7 +94,7 @@ ggplot(test_data, aes(x = diagnosis, y = predicted)) +
 ``````
 
 
-![스크린샷 2025-01-11 05-26-20](https://github.com/user-attachments/assets/e414eecb-1032-43f3-b646-310f719245c2)
+![스크린샷 2025-01-11 05-34-23](https://github.com/user-attachments/assets/bae7aa4e-d592-4abd-8c0e-521eb3f2aa81)
 
 
 
