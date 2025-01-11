@@ -79,7 +79,7 @@ vis.gam(model, view = c("radius_mean", "texture_mean"), type = "response", plot.
 
 ![스크린샷 2025-01-11 05-34-11](https://github.com/user-attachments/assets/4ca396d9-42f5-4eb3-a726-d25eb7cc124c)
 
-
+Visualizing Actual vs Predicted Outcomes
 ```
 install.packages("ggplot2")
 library(ggplot2)
