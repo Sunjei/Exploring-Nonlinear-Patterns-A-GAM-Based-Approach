@@ -1,6 +1,6 @@
 # Exploring-Nonlinear-Patterns-A-GAM-Based-Approach
 
-
+Loading and Preparing Data
 ```
 library(readr)
 data <- read_csv("data.csv")
@@ -8,7 +8,7 @@ View(data)
 install.packages("mgcv")
 library(mgcv)
 ```
-
+Cleaning Data
 ```
 data$diagnosis <- ifelse(data$diagnosis == "M", 1, 0)
 duplicated_ids <- data$id[duplicated(data$id)]
@@ -31,6 +31,8 @@ colSums(is.na(data))
 sum(is.na(data))
 ```
 
+Splitting Data into Training and Testing Sets &
+Building the Generalized Additive Model (GAM)
 ```
 set.seed(123)
 
@@ -55,7 +57,7 @@ plot(model, pages = 1)
 ![스크린샷 2025-01-11 05-34-03](https://github.com/user-attachments/assets/e0160d10-9ee3-4d2e-ad88-46e4da24fda7)
 
 
-
+Evaluating Model Performance
 ```
 predictions <- predict(model, test_data, type = "response")
 library(pROC)
